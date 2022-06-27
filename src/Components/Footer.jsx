@@ -6,7 +6,7 @@ const Footer = (darkMode) => {
 
     return (
         <footer>
-            <p className={ darkMode ? 'footer-dark' : 'footer-light' }>&copy; Powered by. David Diaz H | {currentYear}</p>
+            <p className='footer-dark'>&copy; Powered by. David Diaz H | {currentYear}.</p>
         </footer>
     )
 }

@@ -18,6 +18,13 @@ code {
 }
 
 
+.main-bg-dark {
+  background-color: #1c1c1c;
+}
+
+.main-bg-light {
+  background-color: #f3f4f5;
+}
 
 /* ------------------- */
 
@@ -57,6 +64,7 @@ code {
 
 
 .main-randm-dark {
+  width: 100%;
   background-color: #1c1c1c;
   max-width: 1920px;
   margin: 0 auto;
@@ -119,9 +127,19 @@ code {
   color: #fff;
 }
 
-.footer-light {
-  text-align: center;
-  padding: 15px 0;
-  background-color: #f3f4f5;
+.switch-mode {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-page-dark {
+  margin: 50px 0;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.current-page-light {
+  margin: 50px 0;
   color: #000;
+  font-size: 2rem;
 }

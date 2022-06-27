@@ -34,13 +34,16 @@ export const RAndMList = () => {
     
 
     return (
-        <>
+        <main className={ darkMode ? 'main-bg-dark' : 'main-bg-light' }>
             {
                 loading ? (
                     <Loading />
                 ) : (
                     <div className={ darkMode ? 'main-randm-dark' : 'main-randm-light' }>
-                        <button onClick={onSwitchMode}>{darkMode ? 'Light mode' : 'Dark mode'}</button>
+                        <div className='switch-mode'>
+                            <p className={ darkMode ? 'current-page-dark' : 'current-page-light' }>Page {page}</p>
+                            <button onClick={onSwitchMode} className='buttons-pages'>{darkMode ? 'Light Mode' : 'Dark Mode'}</button>
+                        </div>
                         <div className={ darkMode ? 'list-randm-dark' : 'list-randm-light' }>
                             {
                                 characters.map(character => (
@@ -69,6 +72,6 @@ export const RAndMList = () => {
                     </div>
                 )
             }
-        </>
+        </main>
     )
 }
