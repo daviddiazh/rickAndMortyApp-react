@@ -111,3 +111,17 @@ code {
   text-align: center;
   font-size: 18px;
 }
+
+.footer-dark {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.footer-light {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f3f4f5;
+  color: #000;
+}
