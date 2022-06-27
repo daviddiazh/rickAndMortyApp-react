@@ -21,35 +21,71 @@ code {
 
 /* ------------------- */
 
-.main-randm {
+.main-randm-light {
   background-color: #f3f4f5;
-}
-
-.list-randm {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.list-randm-light {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
 }
 
-.card-randm {
+.card-randm-light {
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   background-color: #fff;
 }
-.card-randm img{
+.card-randm-light img{
   width: 100%;
 }
 
-.card-randm:hover {
+.card-randm-light:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.info-randm {
+.info-randm-light {
   height: 50px;
   padding: 0 10px;
-  line-height: 40px;
+  line-height: 43px;
   display: flex;
   justify-content: space-between;
+  color: #000;
+}
+
+
+.main-randm-dark {
+  background-color: #1c1c1c;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.list-randm-dark {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.card-randm-dark {
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  background-color: rgb(52, 52, 52);
+}
+.card-randm-dark img{
+  width: 100%;
+}
+
+.card-randm-dark:hover {
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 10px 15px -3px, rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
+}
+
+.info-randm-dark {
+  height: 50px;
+  padding: 0 10px;
+  line-height: 43px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
 }
