@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useState } from 'react'
+import { Loading } from './Loading';
 
 export const RAndMList = () => {
 
@@ -36,9 +37,7 @@ export const RAndMList = () => {
         <>
             {
                 loading ? (
-                    <div>
-                        <h1>LOADING......</h1>
-                    </div>
+                    <Loading />
                 ) : (
                     <div className={ darkMode ? 'main-randm-dark' : 'main-randm-light' }>
                         <button onClick={onSwitchMode}>{darkMode ? 'Light mode' : 'Dark mode'}</button>
@@ -55,11 +54,18 @@ export const RAndMList = () => {
                                 ))
                             }
                         </div>
-                        {
-                        page > 1 ? <button onClick={onPreviousPage}>Page {page - 1}</button> : null
-                        }{
-                        page < 43 ? <button onClick={onNextPage}>Page {page + 1}</button> : null
-                        }
+                        <div className='container-buttons-page'>
+                            {
+                                page > 1 
+                                ? <button onClick={onPreviousPage}  className='buttons-pages'>{"< "} Page {page - 1}</button> : null
+                            }
+                        
+                            {
+                                page < 43 
+                                ? <button onClick={onNextPage} className='buttons-pages'>Page {page + 1} {" >"}</button> 
+                                : null
+                            }
+                        </div>
                     </div>
                 )
             }

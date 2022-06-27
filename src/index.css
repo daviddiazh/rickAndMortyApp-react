@@ -89,3 +89,25 @@ code {
   justify-content: space-between;
   color: #fff;
 }
+
+
+.container-buttons-page {
+  display: flex;
+  max-width: 1920px;
+  justify-content: space-between;
+}
+
+.buttons-pages {
+  display: flex;
+  max-width: 1920px;
+  justify-content: flex-end;
+  margin: 50px 0;
+  padding: 10px;
+  background-color: #3B82F6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+}
