@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App";
-import RAndMId from "./Components/RAndMId";
 import { RAndMList } from "./Components/RAndMList";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +15,6 @@ root.render(
         <Routes>
             <Route path='/' element={<App />} />
             <Route index element={<RAndMList />} />
-            <Route path='/randm/:id' element={<RAndMId />} />
 
             <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>

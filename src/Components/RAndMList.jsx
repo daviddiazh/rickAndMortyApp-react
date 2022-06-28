@@ -9,7 +9,6 @@ export const RAndMList = () => {
     const [ darkMode, setDarkMode ] = useState(false);
     const [ loading, setLoading ] = useState(true)
 
-    
     useEffect(() => {
         async function fetchData () {
             const data = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
@@ -47,7 +46,8 @@ export const RAndMList = () => {
                         </div>
                         <div className={ darkMode ? 'list-randm-dark' : 'list-randm-light' }>
                             {
-                                characters.map(character => (
+                                characters.map((character) => (
+                                    
                                     <div key={character.id} className={ darkMode ? 'card-randm-dark' : 'card-randm-light' }>
                                         <img src={character.image} />
                                         <div className={ darkMode ? 'info-randm-dark' : 'info-randm-light' }>
@@ -55,6 +55,7 @@ export const RAndMList = () => {
                                             <p>{character.name}</p>
                                         </div>
                                     </div>
+                                   
                                 ))
                             }
                         </div>
