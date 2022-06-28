@@ -1,5 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { BrowserRouter, Link } from 'react-router-dom';
+import Footer from './Footer';
 import { Loading } from './Loading';
 
 export const RAndMList = () => {
@@ -74,6 +75,7 @@ export const RAndMList = () => {
                     </div>
                 )
             }
+            <Footer />
         </main>
     )
 }
