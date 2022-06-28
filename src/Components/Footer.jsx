@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Footer = (darkMode) => {
+const Footer = () => {
 
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer>
-            <p className='footer-dark'>&copy; Powered by. David Diaz H | {currentYear}.</p>
+        <footer className='footer-dark'>
+            <p>&copy; Powered by. David Diaz H | {currentYear}.</p>
         </footer>
     )
 }

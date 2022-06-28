@@ -64,7 +64,6 @@ code {
 
 
 .main-randm-dark {
-  width: 100%;
   background-color: #1c1c1c;
   max-width: 1920px;
   margin: 0 auto;
@@ -120,8 +119,9 @@ code {
   font-size: 18px;
 }
 
-.footer-dark {
+.footer-dark p{
   text-align: center;
+  width: 100%;
   padding: 15px 0;
   background-color: #1c1c1c;
   color: #fff;
